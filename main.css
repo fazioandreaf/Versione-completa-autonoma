@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* \Regole header */
+header,.jumbo,.row,footer {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+}
+header {
+  margin:  auto;
+  background-color: pink;
+  min-height: calc(20px + 3vh);
+}
+header img {
+  vertical-align: middle;
+}
+header span {
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: bold;
+}
+header ul {
+  list-style-type: none; /* rimuovo le decorazioni */
+  margin: 10px 0px;
+}
+header li {
+  display: inline-block;
+}
+header a {
+   text-decoration: none; /*rimuovo le decorazioni */
+  font-style : italic;
+  color: lightgrey;
+}
+.jumbo {
+  position: relative;
+  margin-top: 2vh;
+  background-color: yellow;
+  height: 500px;
+}
+.jumbo span {
+  vertical-align: bottom;
+  position: absolute;
+  top: 70%;
+  margin: 20px
+}
+.intestazione {
+  background-color: lightblue;
+  height: 100px;
+  margin-top: 10px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-row1 {
+  float: left;
+  height: 300px;
+  background-color:lightblue;
+  margin-top: 1%;
+}
+.aside {
+  width: 27%;
+}
+.central {
+  margin: 1% 3%;
+  width: 40%;
+}
+footer {
+  background-color: purple;
+  height: 50px;
+}
